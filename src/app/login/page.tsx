@@ -1,8 +1,9 @@
 import LoginForm from '@/components/loginForm'
 import React from 'react'
 import { getServerSession } from 'next-auth'
-import { authOptions } from '../api/auth/[...nextauth]/route'
 import { redirect } from 'next/navigation'
+import { authOptions } from '@/lib/auth'
+
 type Props = {}
 
 export default async function Login({}: Props) {
